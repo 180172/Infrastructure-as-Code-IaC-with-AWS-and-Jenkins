@@ -30,7 +30,7 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 - Login to the AWS GUI
 - Search for S3-Bucket
 - Click on create new bucket
-![Alt text](image-3.png)
+![Screenshot 2023-09-24 220514](https://github.com/180172/Terraform-project-2/assets/110009356/528b5cf2-8287-4c66-b27a-354af49266f6)
 - Add the bucket name. Bucket name must be unique.
 - Select region and click on Create bucket
 ![Alt text](image-4.png)
