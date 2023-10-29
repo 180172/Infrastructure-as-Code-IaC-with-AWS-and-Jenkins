@@ -34,15 +34,15 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
 - Select VPC and subnets
 
-![Screenshot 2023-10-29 173028 - Copy](https://github.com/180172/Terraform-project-2/assets/110009356/56e3a947-04a6-4f74-8d24-835f2a6b1791)
+![Screenshot 2023-10-29 173252](https://github.com/180172/Terraform-project-2/assets/110009356/68deda57-3d2b-411a-9bff-80265e434e60)
 
 - Create a new security group. Allow SSH and All traffic Anywhere 
 
-![Screenshot 2023-10-29 173252](https://github.com/180172/Terraform-project-2/assets/110009356/68deda57-3d2b-411a-9bff-80265e434e60)
+![Screenshot 2023-10-29 173600](https://github.com/180172/Terraform-project-2/assets/110009356/f04f44ea-f4ef-4563-8a2d-eca91a35718a)
 
 - Add storage of 15GB for storage
 
-![Screenshot 2023-10-29 173600](https://github.com/180172/Terraform-project-2/assets/110009356/f04f44ea-f4ef-4563-8a2d-eca91a35718a)
+![Screenshot 2023-10-29 173758](https://github.com/180172/Terraform-project-2/assets/110009356/cd39420c-f366-41f6-a508-1dfc9565352e)
 
 - Click on Create instance
 
@@ -51,13 +51,13 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
 - Open IAM console
 
-![Alt text](<Screenshot 2023-10-29 174037.png>)
+![Screenshot 2023-10-29 174037](https://github.com/180172/Terraform-project-2/assets/110009356/6fe95117-54f7-438f-bdee-cda13b2cabd9)
 
 - Select "AWS service"
 
-![Alt text](image-14.png)
+![Screenshot 2023-10-29 174351](https://github.com/180172/Terraform-project-2/assets/110009356/16e87290-1258-4925-a4ab-009b4a5f1dfe)
 
-![Alt text](image-15.png)
+![Screenshot 2023-10-29 174458](https://github.com/180172/Terraform-project-2/assets/110009356/5de0389a-3f29-400f-84b4-74cec29c3697)
 
 - Click on next
 
@@ -73,11 +73,11 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
 - Under Actions => Security => Modify IAM role.
 
-![Alt text](image-16.png)
+![Screenshot 2023-10-29 175309](https://github.com/180172/Terraform-project-2/assets/110009356/7cc07342-8eac-408e-83a2-d9c24460eb9a)
 
 - Select IAM role that you created and click on Update IAM role
 
-![Alt text](image-17.png)
+![Screenshot 2023-10-29 175511](https://github.com/180172/Terraform-project-2/assets/110009356/312db4cc-76b4-409b-9af5-e1f3d22e9384)
 
 ## STEP 4:
 ## Install Jenkins 
@@ -127,28 +127,26 @@ ex:
 ```
 - You will get this page
 
-![Alt text](<Screenshot 2023-08-04 211812.png>)
+![Screenshot 2023-08-04 211812](https://github.com/180172/Terraform-project-2/assets/110009356/ddebf861-d6a9-4cd2-a07d-cef38ad9be1f)
 
 - Paste admin password
 
 - Install suggested plugins
 
-![Alt text](<Screenshot 2023-05-17 152132.png>)
+![Screenshot 2023-05-17 152132](https://github.com/180172/Terraform-project-2/assets/110009356/cd11b8e3-854d-47b8-85dd-5be6d84d64f8)
 
 - Plugins are getting downloaded
 
-![Alt text](image-18.png)
+![Screenshot 2023-08-05 103205](https://github.com/180172/Terraform-project-2/assets/110009356/439083cb-b95e-4959-b7bb-7bc281ff2899)
 
 - Click On save and finish
 
-![Alt text](image-19.png)
+![Screenshot 2023-08-05 103757](https://github.com/180172/Terraform-project-2/assets/110009356/d5e497ac-2377-4ac2-8220-37ae56c2cde0)
 
 
-
-- Visit the below website if you are installing jenkins for other Images
+- Visit the below website if you are installing Jenkins for other Images
 
 ``` https://www.jenkins.io/doc/book/installing/ ```
-
 
 ## STEP 1:
 ### What is terraform.tfstate file?
