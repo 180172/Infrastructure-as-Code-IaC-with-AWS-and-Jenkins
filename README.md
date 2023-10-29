@@ -1,20 +1,153 @@
-# Automated Infrastructure Management with Ansible and Terraform
- In this project, we are deploying 2 Ansible remote machines & 1 control node.
-We are installing 2 Ansible remote machines and 1 control node for this project. Python is being installed on 2 remote nodes and the Ansible software is on the control node. The "terraform. tfstate" file is kept in off-site storage. We utilize AWS S3 to store remote states. DynamoDB is the database we're using for state locking.
+# Infrastructure as Code (IaC) with AWS and Jenkins
 
-## Prerequsite 
+### This project showcases the implementation of Infrastructure as Code (IaC) using Terraform, AWS, and Jenkins to automate the provisioning of remote Ansible nodes and a control node. The infrastructure is designed for Ansible automation, facilitating system configuration and management. Below are the key components and features of this project:
+
+## Prerequisite 
 
 - AWS account
-
-- IAM user with S3 & EC2 full access
+ 
+- IAM-Roll with S3, DynamoDB & EC2 full access
 
 - Terraform software 
 
-If you don't have Terraform software visit below Terraform official website.
+If you don't have Terraform software visit below Terraform official website below.
 
 ```
 https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 ```
+
+## STEP 1:
+
+#### Create EC2 instance:
+- Click on Create EC2 instance
+
+![Alt text](image-7.png)
+
+- Select Amazon Linux 2 Image
+
+![Alt text](image-8.png)
+
+- Instance type should be "t2.micro" and select key-pair
+
+![Alt text](image-9.png)
+
+- Select VPC and subnets
+
+![Alt text](image-11.png)
+
+- Create a new security group. Allow SSH and All traffic Anywhere 
+
+![Alt text](image-12.png)
+
+- Add storage of 15GB for storage
+
+![Alt text](image-13.png)
+
+- Click on Create instance
+
+## STEP 2:
+### Create IAM role
+
+- Open IAM console
+
+![Alt text](<Screenshot 2023-10-29 174037.png>)
+
+- Select "AWS service"
+
+![Alt text](image-14.png)
+
+![Alt text](image-15.png)
+
+- Click on next
+
+- Under "Add permissions" select EC2Full Access, S3Full Access, and DynamoDBFull Access
+
+- Add name and click on Create role
+
+## STEP 3:
+
+### Attach IAM policy to EC2 Instance
+
+- Select the Instance that you created
+
+- Under Actions => Security => Modify IAM role.
+
+![Alt text](image-16.png)
+
+- Select IAM role that you created and click on Update IAM role
+
+![Alt text](image-17.png)
+
+## STEP 4:
+## Install Jenkins 
+
+- Open EC2 instance
+
+- Run the below commands to install Jenkins
+
+``` 
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+```
+
+```
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+```
+
+```
+sudo yum upgrade
+```
+- Install JAVA.
+```
+sudo yum install fontconfig java-17-openjdk
+```
+- Install Jenkins
+```
+sudo yum install jenkins
+```
+- Enable the jenkins
+```
+sudo systemctl enable jenkins
+```
+- Start Jenkins service
+```
+sudo systemctl start jenkins
+```
+- Check for status
+```
+sudo systemctl status jenkins
+```
+
+- Copy the server public IP and add:8080 in the browser
+
+ex:
+```
+192.168.119.128:8080
+```
+- You will get this page
+
+![Alt text](<Screenshot 2023-08-04 211812.png>)
+
+- Paste admin password
+
+- Install suggested plugins
+
+![Alt text](<Screenshot 2023-05-17 152132.png>)
+
+- Plugins are getting downloaded
+
+![Alt text](image-18.png)
+
+- Click On save and finish
+
+![Alt text](image-19.png)
+
+
+
+- Visit the below website if you are installing jenkins for other Images
+
+``` https://www.jenkins.io/doc/book/installing/ ```
+
 
 ## STEP 1:
 ### What is terraform.tfstate file?
