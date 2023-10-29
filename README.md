@@ -21,27 +21,28 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 #### Create EC2 instance:
 - Click on Create EC2 instance
 
-![Alt text](image-7.png)
+![Screenshot 2023-10-29 172634](https://github.com/180172/Terraform-project-2/assets/110009356/20a439af-58ec-441c-9ea4-9c2408709f1d)
+
 
 - Select Amazon Linux 2 Image
 
-![Alt text](image-8.png)
+![Screenshot 2023-10-29 172953](https://github.com/180172/Terraform-project-2/assets/110009356/17bec88c-bd4a-479c-ac45-414cb72bb9da)
 
 - Instance type should be "t2.micro" and select key-pair
 
-![Alt text](image-9.png)
+![Screenshot 2023-10-29 173028](https://github.com/180172/Terraform-project-2/assets/110009356/2f3db32a-99ee-46c1-9e98-4b465a8bff5e)
 
 - Select VPC and subnets
 
-![Alt text](image-11.png)
+![Screenshot 2023-10-29 173028 - Copy](https://github.com/180172/Terraform-project-2/assets/110009356/56e3a947-04a6-4f74-8d24-835f2a6b1791)
 
 - Create a new security group. Allow SSH and All traffic Anywhere 
 
-![Alt text](image-12.png)
+![Screenshot 2023-10-29 173252](https://github.com/180172/Terraform-project-2/assets/110009356/68deda57-3d2b-411a-9bff-80265e434e60)
 
 - Add storage of 15GB for storage
 
-![Alt text](image-13.png)
+![Screenshot 2023-10-29 173600](https://github.com/180172/Terraform-project-2/assets/110009356/f04f44ea-f4ef-4563-8a2d-eca91a35718a)
 
 - Click on Create instance
 
