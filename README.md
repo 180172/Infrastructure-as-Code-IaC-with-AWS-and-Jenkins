@@ -5,11 +5,9 @@
 ## Prerequisite 
 
 - AWS account
+
+- GitHub account
  
-- IAM-Roll with S3, DynamoDB & EC2 full access
-
-- Terraform software 
-
 If you don't have Terraform software visit below Terraform official website below.
 
 ```
@@ -197,6 +195,7 @@ ex:
 
 - Search for DynamoDB in AWS
 - Click on Create a table
+  
 ![Screenshot 2023-09-24 224045](https://github.com/180172/Terraform-project-2/assets/110009356/4c1b61b9-1008-4d32-bced-63070416dca9)
 
 - Add the table name
@@ -220,6 +219,7 @@ ssh-keygen
 ```
 
 - Copy the public key and open your GitHub. On the right side corner under your profile select "Settings"
+
 ![Screenshot 2023-10-29 200347](https://github.com/180172/Terraform-project-2/assets/110009356/2afaa987-d273-4812-af50-c8f1b4c15aec)
 
 - Select SSH and GPJ keys and click on New SSH key
@@ -231,29 +231,37 @@ ssh-keygen
 - Now our work is almost completed. Let's create a Jenkins job and trigger the job.
 - Open the Jenkins dashboard
 - Click on New Item. Enter the ITEAM name select PIPELINE and click on OK.
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/ca441d6b-ef13-42a9-accb-6eeca684d13d)
 
 - Under General select "This project is parameterised". Name the parameter and under choices add apply and destroy. This step is used to trigger the job. When you configure the job a prompt will pop up and it will ask you if this job is running to apply the infrastructure or to destroy the infrastructure.
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/87400b37-c135-4fa2-9311-5434a65aea07)
 
 - Select the pipeline script add a sample code and click on Pipeline Syntax
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/9c64be79-129b-4322-9ea5-72fc484e8c5f)
 
-- Under Sample Step select Check out from the version control 
+- Under Sample Step select Check out from the version control
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/0a6036e1-1459-4a12-80e7-629e465e7a0c)
 
 - Select GIT and add your git repo URL
-- Select the default branch 
+- Select the default branch
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/01f77f73-aac4-433b-ab33-95a21ed319dc)
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/3aefd651-cca2-4c0d-a6d9-5d5184fc46a1)
 
 - Click on generate pipeline script and you will get a script
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/ab54afd7-2dca-42fb-b0a5-45c456e89fb7)
 
 - Come back to your main script and add the script as shown below
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/7294f0c9-dc4c-47d1-8052-868b20732477)
 
 - Now continue the script as shown below. The code is in GitHub repo. Click on Apply and Save.
+  
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/07944ff1-272a-43da-b4d7-75a3f3b2346a)
 
 ## STEP 8:
@@ -262,16 +270,22 @@ ssh-keygen
 - Push the code to GitHub
 - In the Jenkins console click on Build with Parameters.
 - Select the apply and click on "Build"
+
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/3aade934-559b-4302-b5db-3370d24825e7)
 
-- Currently, the job is running state. 
+- Currently, the job is running state.
+
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/4ac877f2-9a6a-4fc2-a737-d0f1276aecf0)
 
 - The job has been successfully completed
+
+![Uploading Screenshot 2023-10-29 205447.png…]()
+
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/15cc7a1a-d9b5-4fc1-b0c1-4bb82ef585cc)
 
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/7dd2b3ed-4bdf-46f1-a9eb-5ca83c04af76)
 
-- Now let's destroy the infrastructure. Again click on Build with Parameters and now instead of Apply select Destroy. 
+- Now let's destroy the infrastructure. Again click on Build with Parameters and now instead of Apply select Destroy.
+
 ![image](https://github.com/180172/Terraform-project-2/assets/110009356/f541a4aa-b995-491d-b421-f6c863c7efef)
 
