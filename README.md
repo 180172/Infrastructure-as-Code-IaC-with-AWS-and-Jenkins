@@ -1,6 +1,8 @@
 # Infrastructure as Code (IaC) with AWS and Jenkins
 
-### This project showcases the implementation of Infrastructure as Code (IaC) using Terraform, AWS, and Jenkins to automate the provisioning of remote Ansible nodes and a control node. The infrastructure is designed for Ansible automation, facilitating system configuration and management. Below are the key components and features of this project:
+### This project showcases the implementation of Infrastructure as Code (IaC) using Terraform, AWS, and Jenkins to automate the provisioning of remote Ansible nodes and a control node. The infrastructure is designed for Ansible automation, facilitating system configuration and management. 
+
+### Below are the key components and features of this project:
 
 ## Prerequisite 
 
