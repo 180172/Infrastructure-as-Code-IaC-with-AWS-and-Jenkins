@@ -179,15 +179,14 @@ ex:
 
 - There is a possibility that two developers will push changes to the Terraform code when more than two developers are working on the same project. if more than one request is made simultaneously to the terraform.tfstate file. The tfstate file will become corrupted. We are using the state-locking feature to stop this.
 
+![Screenshot 2023-09-24 223822](https://github.com/180172/Terraform-project-2/assets/110009356/ba211b13-f8ce-4368-b807-91cab05243e7)
 
 - Terraform maintains its state file locally by default. When a terraform operation is being carried out locally, the state file is automatically locked utilizing APIs.
 
 - All backends will not support the Terraform state-locking feature. In order to learn about the statelocking feature, we must read the documentation.
 
-                   ![Screenshot 2023-09-24 223822](https://github.com/180172/Terraform-project-2/assets/110009356/ba211b13-f8ce-4368-b807-91cab05243e7)
-
-                   ![image](https://github.com/180172/Infrastructure-as-Code-IaC-with-AWS-and-Jenkins/assets/110009356/30bec4d6-3f99-434a-8895-6bf16a1b8331)
-
+![image](https://github.com/180172/Infrastructure-as-Code-IaC-with-AWS-and-Jenkins/assets/110009356/30bec4d6-3f99-434a-8895-6bf16a1b8331)
+       
 - Some of the popular backends include:
 - S3
 - Consul
